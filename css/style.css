@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s ease-in;
+  scroll-behavior: smooth;
+}
+:root {
+  --ungu: #c93535;
+}
+
+body {
+  color-scheme: dark light;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 3rem;
+}
+header.efekHeader {
+  background-color: white;
+  box-shadow: 3px 0 5px #49494956;
+}
+header #logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ungu);
+}
+header .menu {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  font-weight: 500;
+  list-style: none;
+  justify-content: space-around;
+}
+header .icon-menu {
+  display: none;
+}
+header .menu a.aktif {
+  color: var(--ungu);
+  border-bottom: 0.1rem solid var(--ungu);
+}
+header .menu a {
+  color: #292929;
+  text-decoration: none;
+}
+header .menu a.aktif:hover,
+header .menu a:hover {
+  color: var(--ungu);
+  transform: scale(2px);
+  border-bottom: 0.1rem solid var(--ungu);
+}
+main .hero {
+  display: flex;
+  padding: 9rem 5rem;
+}
+main .hero .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 5;
+}
+main .hero .info a{
+  display: block;
+  width: fit-content;
+}
+main .hero .info .btn-klik {
+  padding: 0.3rem 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--ungu);
+  color: var(--ungu);
+  background-color: transparent;
+}
+main .hero .info .btn-klik:hover {
+  background-color: var(--ungu);
+  color: white;
+}
+main .hero .box-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+  margin: 2rem 0;
+}
+main .hero .box-img img {
+  width: 10rem;
+}
+main .hero .info #judul {
+  font-size: 2rem;
+}
+main .hero .info #judul span {
+  color: var(--ungu);
+}
+main .hero .info h3 span {
+  color: var(--ungu);
+  font-size: 1.4;
+}
+main .hero .info p {
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+main .hero .btn-klik {
+  margin-top: 10px;
+  cursor: pointer;
+}
+main .box-project {
+  padding-top: 5rem;
+}
+main .box-project h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+main .box-project .boxs {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .box-project .boxs .box {
+  height: 200px;
+  flex: 0 0 45%;
+  display: flex;
+  background-color: gray;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+main .box-project .boxs .box h4 {
+  color: #ffffff49;
+}
+main .box-project .boxs .box:hover h4 {
+  text-shadow: 0 0 5px #49494956;
+  color: #ffffff;
+  cursor: progress;
+}
+main .box-project .boxs .box img {
+  width: 100%;
+}
+main #about {
+  padding: 0 7%;
+  padding-bottom: 7rem;
+  background-color: var(--ungu);
+  color: white;
+  border-radius: 1rem 1rem 0 0;
+}
+main #about h3 {
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+main #about .informasi {
+  display: flex;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: auto;
+}
+main #about .informasi .tentang {
+  flex: 1;
+  padding: 1rem 3rem;
+}
+main #about .informasi .pendidikanDanSkill {
+  flex: 1;
+  padding: 1rem 5rem;
+}
+main #about .informasi .pendidikanDanSkill ul {
+  border-left: 2px solid white;
+  padding-left: 1rem;
+  list-style: none;
+}
+main #about .informasi .pendidikanDanSkill ul li{
+  margin: .7rem 0;
+  position: relative;
+}
+main #about .informasi .pendidikanDanSkill ul li::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -1.35rem;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(55,55,55,0.502);
+  background-color: white;
+}
+main #contact {
+  margin: auto;
+  margin-top: -0.9rem;
+  background-color: white;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2.5rem 7%;
+}
+main #contact h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+main #contact form {
+  width: 60%;
+  margin: auto;
+}
+main #contact form > * {
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-family: inherit;
+  border: 2px solid var(--ungu);
+}
+main #contact form > button {
+  background-color: transparent;
+  color: var(--ungu);
+  border: 2px solid var(--ungu);
+  font-weight: 700;
+}
+main #contact form > button:hover {
+  background-color: var(--ungu);
+  color: white;
+}
+ footer {
+  background-color: var(--ungu);
+  padding: 4rem 7% 1rem 7%;
+  border-radius: 1rem 1rem 0 0;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer ul li{
+  margin: .3em .8rem;
+  opacity: .5;
+  list-style: none;
+}
+footer ul li:hover{
+  opacity: .8;
+}
+footer p em{
+  opacity: .5;
+  color: white;
+  font-weight: 700;
+  font-size: .8rem;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 1rem 7%;
+  }
+  header .menu {
+    position: absolute;
+    top: 0;
+    padding: 1.2rem;
+    right: -100%;
+    background-color: white;
+    box-shadow: -2px 0 4px #29292952;
+    display: block;
+    height: 100vh;
+  }
+  header .menu li {
+    margin-bottom: 1rem;
+  }
+  header .icon-menu {
+    display: block;
+  }
+  header .icon-menu img {
+    width: 30px;
+  }
+  main .hero {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 5rem 7%;
+  }
+  main .hero .box-img img {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  /* geser ketika menu di clik */
+  header .geser {
+    right: 0;
+  }
+  main .box-project .boxs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  main .box-project .boxs .box {
+    width: 100%;
+    height: 150px;
+    border-radius: 0 15px 15px 0;
+  }
+  main .box-project .boxs .box:nth-child(even) {
+    border-radius:15px 0 0 15px;
+    float: right;
+  }
+  main .box-project .boxs .box img {
+    width: 100%;
+  }
+  main #about {
+    padding: 2rem 7%;
+    padding-bottom: 10rem;
+  }
+  main #about .informasi {
+    display: block;
+    margin: 0;
+    width: 90%;
+  }
+  main #about .informasi .tentang {
+    padding: 3rem 0;
+  }
+  main #about .informasi .pendidikanDanSkill {
+    padding: 0 1rem;
+  }
+  main #contact form {
+    width: 90%;
+  }
+}
