@@ -1,112 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fidi</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <!-- start header -->
-  <header>
-    <a href="#" id="logo">fidfulcin</a>
-    
-    <ul class="menu">
-      <li><a  href="#" class="aktif">Beranda</a></li>
-      <li><a href="#project">Karya</a></li>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-    
-    <div class="icon-menu">
-      <img id="btn-menu" src="./assets/menu.png" alt="">
-    </div>
-  </header>
-  <!-- end header -->
-  
-  <!-- start main -->
-  <main>
-    <!-- start hero -->
-    <section class="hero">
-      <div class="info">
-        <h1 id="judul">Hai, ini <span>Fidi</span></h1>
-        <h3>Saya seorang <span>Pelajar</span></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quam.</p>
-        <div class="box-links">
-        </div>
-        <a href="#contact"><button class="btn-klik">Kontak</button></a>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- start seo -->
+    <meta name="google-site-verification" content="AM47ruBftRpWjwAc_qkg4SAuGJWhLuCXg9zq1nXtAe8" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Portofolio Fidi, pelajar SMK jurusan Teknik Jaringan Komputer, serta suka coba coba Web Development, sedang belajar HTML, CSS, dan JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Fidi, SMK, teknik jaringan, web development, HTML, CSS, JavaScript, portofolio SMK"
+    />
+    <meta name="author" content="Fidi" />
+    <meta property="og:title" content="Andrea | Pelajar SMK & Web Dev Pemula" />
+    <meta
+      property="og:description"
+      content="Portofolio Fidi, pelajar SMK jurusan teknik jaringan & suka main web development."
+    />
+    <meta property="og:url" content="https://fidih.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://fidih.github.io/assets/pp.webp"
+    />
+
+    <!-- Untuk Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fidi | Pelajar SMK & Web Dev Pemula" />
+    <meta
+      name="twitter:description"
+      content="Portofolio Fidi, pelajar SMK jurusan teknik jaringan & suka main web development."
+    />
+    <meta
+      name="twitter:image"
+      content="https://fidih.github.io/assets/pp.webp"
+    />
+    <!-- end seo -->
+
+    <title>Fidi | Pelajar SMK & Web Dev Pemula</title>
+    <!-- start aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end aos -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <a href="#" id="logo">fidfulcin</a>
+
+      <ul class="menu">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#project">Karya</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li>
+          <label for="colorAksen"></label>
+          <input hidden id="colorAksen" type="color" value="#c93535" />
+        </li>
+      </ul>
+
+      <div class="icon-menu">
+        <img id="btn-menu" src="./assets/menu.png" alt="" />
       </div>
-      <div class="box-img">
-        <img src="./assets/pp.webp" alt="profile">
-      </div>
-    </section>
-    <!-- end hero -->
-    
-    <!-- start project -->
-    <div id="project" class="box-project">
-      
-      <h2>Karya Sederhana</h2>
-      <div class="boxs">
-        <div class="box">
-          <h4>Pesan Anonim</h4>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <!-- start hero -->
+      <section class="hero">
+        <div class="info">
+          <h1 id="judul">
+            Hai, <span id="ketik"></span><span class="kedip">_</span>
+          </h1>
+          <h3>Saya seorang <span>Pelajar</span></h3>
+          <p>
+            Masih duduk di bangku SMK, tapi rasa penasaran saya udah melesat ke
+            mana-mana 👨‍🍳.
+          </p>
+          <div class="box-links"></div>
+          <a href="#contact"><button class="btn-klik">Kontak</button></a>
+        </div>
+        <div class="box-img">
+          <img src="./assets/pp.webp" alt="profile" />
+        </div>
+      </section>
+      <!-- end hero -->
+
+      <!-- start about -->
+      <section id="about">
+        <h2 data-aos="flip-up">Tentang Saya</h2>
+        <div class="informasi">
+          <div class="tentang">
+            <h4 data-aos="flip-up">Hai…👋</h4>
+            <p data-aos="flip-up">
+              Saya Fidi, pelajar SMK jurusan Teknik Jaringan Komputer &
+              Telekomunikasi. Selain jaringan, saya juga suka coba-coba main web
+              pakai HTML, CSS, dan JavaScript. Prinsip saya: berani coba, siap
+              error, dan 😂🤣(u know).
+            </p>
+            <br />
+            <p data-aos="flip-up">
+              Meskipun saya belum punya banyak pengalaman atau proyek besar,
+              saya percaya bahwa kemauan untuk terus belajar adalah fondasi
+              terpenting.
+            </p>
+          </div>
+          <div class="pendidikanDanSkill" data-aos="flip-up">
+            <ul>
+              <li>SMK LPPM RI 2 Kedungreja - (sekarang)</li>
+              <li>MTs Ell-Firdaus 2 Kedungreja - (2024)</li>
+              <li>MI Al-Ma'arif 2 Tambaksari - (2021)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+
+      <!-- start project -->
+      <div id="project" class="box-project">
+        <h2 data-aos="flip-up">Karya Sederhana</h2>
+        <div class="boxs">
+          <div class="box" data-aos="flip-up" data-aos-delay="100">
+            <h4><a href="">Pesan Anonim</a></h4>
+            <img src="assets/pp.webp" alt="" />
+          </div>
+          <div class="box" data-aos="flip-up" data-aos-delay="500">
+            <h4><a href="">Pesan Anonim</a></h4>
+            <img src="assets/pp.webp" alt="" />
+          </div>
         </div>
       </div>
-      
-    </div>
-    <!-- end project -->
-    
-    <!-- start about -->
-    <section id="about">
-      
-      <h3>Tentang Saya</h3>
-      <div class="informasi">
-        <div class="tentang">
-          <h4>Hai…</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae perspiciatis dicta, iusto dolore iure sapiente voluptatibus ullam cum debitis earum itaque assumenda repellat dignissimos temporibus vel excepturi reiciendis corporis iste.</p>
-        </div>
-        <div class="pendidikanDanSkill">
+      <!-- end project -->
+
+      <!-- start kontak -->
+      <section id="contact">
+        <h2 data-aos="flip-up">Kontak</h2>
+        <div class="data-kontak">
           <ul>
-            <li>SMK LPPM RI 2 Kedungreja - (sekarang) </li>
-            <li>MTs Ell-Firdaus 2 Kedungreja - (2024) </li>
-            <li>MI Al-Ma'arif 2 Tambaksari - (2021) </li>
+            <li data-aos="flip-up">whatsapp : (62) 8311 6293 051</li>
+            <li data-aos="flip-up">tempat : Cilacap Barat. Indonesia</li>
           </ul>
         </div>
-      </div>
-      
-    </section>
-    <!-- end about -->
-    
-    <!-- start kontak -->
-    <section id="contact">
-      <h3>Kontak</h3>
-      <form action="">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="messeage"></textarea>
-        <button type="submit">Kirim</button>
-      </form>
-      
-    </section>
-    <!-- end kontak -->
-  </main>
-  <!-- end main -->
-  
-  <!-- start footer -->
-  <footer>
-    
-    <h2><a href="">fidfulcin</a></h2>
-    <ul>
-      <li><a  href="#" class="aktif">Beranda</a></li>
-      <li><a href="#project">Karya</a></li>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-    <p>
-      
-    <em>Fidi - 2025</em>
-    </p>
-  </footer>
-  <!-- end footer -->
-  <script src="./js/script.js"></script>
-</body>
+        <form action="">
+          <input data-aos="flip-up" type="email" placeholder="Email" />
+          <textarea data-aos="flip-up" placeholder="messeage"></textarea>
+          <button data-aos="flip-up" type="submit">Kirim</button>
+        </form>
+        <em style="opacity: 0.5">*form belum berfungsi</em>
+      </section>
+      <!-- end kontak -->
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer>
+      <h2 data-aos="flip-up"><a href="">fidfulcin</a></h2>
+      <ul data-aos="flip-up">
+        <li><a href="#" class="aktif">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#project">Karya</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <p>
+        <em>Fidi - 2025</em>
+      </p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- start aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- end aos -->
+
+    <!-- js mandiri -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>

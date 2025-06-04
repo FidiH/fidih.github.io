@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,12 +9,13 @@
   scroll-behavior: smooth;
 }
 :root {
-  --ungu: #c93535;
+  --aksen: #c93535;
 }
 
 body {
-  color-scheme: dark light;
+  font-family: "Zain", Sans-Serif;
   background-color: white;
+  line-height: 1;
 }
 
 header {
@@ -21,6 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  z-index: 99;
   top: 0;
   left: 0;
   padding: 0.8rem 3rem;
@@ -30,10 +34,10 @@ header.efekHeader {
   box-shadow: 3px 0 5px #49494956;
 }
 header #logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 800;
   text-decoration: none;
-  color: var(--ungu);
+  color: var(--aksen);
 }
 header .menu {
   display: flex;
@@ -46,19 +50,23 @@ header .menu {
 header .icon-menu {
   display: none;
 }
-header .menu a.aktif {
-  color: var(--ungu);
-  border-bottom: 0.1rem solid var(--ungu);
-}
 header .menu a {
   color: #292929;
   text-decoration: none;
 }
-header .menu a.aktif:hover,
+header .menu li label {
+  background: var(--aksen);
+  display: block;
+  box-shadow: 0 0 0.2rem #1111117f;
+  width: 1rem;
+  cursor: pointer;
+  height: 1rem;
+  border-radius: 50%;
+}
 header .menu a:hover {
-  color: var(--ungu);
+  color: var(--aksen);
   transform: scale(2px);
-  border-bottom: 0.1rem solid var(--ungu);
+  border-bottom: 0.1rem solid var(--aksen);
 }
 main .hero {
   display: flex;
@@ -70,19 +78,19 @@ main .hero .info {
   justify-content: center;
   flex: 5;
 }
-main .hero .info a{
+main .hero .info a {
   display: block;
   width: fit-content;
 }
 main .hero .info .btn-klik {
   padding: 0.3rem 0.5rem;
   font-weight: 500;
-  border: 2px solid var(--ungu);
-  color: var(--ungu);
+  border: 2px solid var(--aksen);
+  color: var(--aksen);
   background-color: transparent;
 }
 main .hero .info .btn-klik:hover {
-  background-color: var(--ungu);
+  background-color: var(--aksen);
   color: white;
 }
 main .hero .box-img {
@@ -94,19 +102,19 @@ main .hero .box-img {
 }
 main .hero .box-img img {
   width: 10rem;
+  border-radius: 1rem;
 }
 main .hero .info #judul {
   font-size: 2rem;
 }
 main .hero .info #judul span {
-  color: var(--ungu);
+  color: var(--aksen);
 }
 main .hero .info h3 span {
-  color: var(--ungu);
-  font-size: 1.4;
+  color: var(--aksen);
 }
 main .hero .info p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 5px 0;
 }
 main .hero .btn-klik {
@@ -118,7 +126,7 @@ main .box-project {
 }
 main .box-project h2 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 main .box-project .boxs {
@@ -136,34 +144,46 @@ main .box-project .boxs .box {
   background-color: gray;
   border-radius: 15px;
   align-items: center;
+  position: relative;
   justify-content: center;
+  overflow: hidden;
 }
 main .box-project .boxs .box h4 {
-  color: #ffffff49;
+  position: absolute;
+  z-index: 9;
 }
-main .box-project .boxs .box:hover h4 {
+main .box-project .boxs .box h4 a {
+  color: #ffffff49;
+  text-decoration: none;
+}
+main .box-project .boxs .box:hover h4 a {
   text-shadow: 0 0 5px #49494956;
   color: #ffffff;
   cursor: progress;
 }
 main .box-project .boxs .box img {
-  width: 100%;
+  width: 99%;
+object-fit: contain;
+  filter: grayscale(2);
+}
+main .box-project .boxs .box:hover img {
+  filter: grayscale(0);
 }
 main #about {
   padding: 0 7%;
   padding-bottom: 7rem;
-  background-color: var(--ungu);
+  background-color: var(--aksen);
   color: white;
   border-radius: 1rem 1rem 0 0;
 }
-main #about h3 {
+main #about h2 {
   text-align: center;
   padding-top: 3rem;
   margin-bottom: 0.5rem;
 }
 main #about .informasi {
   display: flex;
-  font-size: 0.8rem;
+  font-size: 1rem;
   width: 100%;
   margin: auto;
 }
@@ -180,11 +200,11 @@ main #about .informasi .pendidikanDanSkill ul {
   padding-left: 1rem;
   list-style: none;
 }
-main #about .informasi .pendidikanDanSkill ul li{
-  margin: .7rem 0;
+main #about .informasi .pendidikanDanSkill ul li {
+  margin: 0.7rem 0;
   position: relative;
 }
-main #about .informasi .pendidikanDanSkill ul li::before{
+main #about .informasi .pendidikanDanSkill ul li::before {
   content: "";
   display: block;
   position: absolute;
@@ -192,7 +212,7 @@ main #about .informasi .pendidikanDanSkill ul li::before{
   height: 10px;
   left: -1.35rem;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(55,55,55,0.502);
+  box-shadow: 0 0 4px rgba(55, 55, 55, 0.502);
   background-color: white;
 }
 main #contact {
@@ -202,9 +222,19 @@ main #contact {
   border-radius: 1rem 1rem 0 0;
   padding: 2.5rem 7%;
 }
-main #contact h3 {
+main #contact h2 {
   text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
+}
+main #contact .data-kontak {
+  margin: 2rem auto;
+  width: 60%;
+  padding: 0 7%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+main #contact .data-kontak li {
+  margin: 1rem;
 }
 main #contact form {
   width: 60%;
@@ -212,48 +242,49 @@ main #contact form {
 }
 main #contact form > * {
   display: block;
+  border-radius: 1rem;
   width: 100%;
   background-color: white;
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
   color: #000;
   font-family: inherit;
-  border: 2px solid var(--ungu);
+  border: 2px solid var(--aksen);
 }
 main #contact form > button {
   background-color: transparent;
-  color: var(--ungu);
-  border: 2px solid var(--ungu);
+  color: var(--aksen);
+  border: 2px solid var(--aksen);
   font-weight: 700;
 }
 main #contact form > button:hover {
-  background-color: var(--ungu);
+  background-color: var(--aksen);
   color: white;
 }
- footer {
-  background-color: var(--ungu);
+footer {
+  background-color: var(--aksen);
   padding: 4rem 7% 1rem 7%;
   border-radius: 1rem 1rem 0 0;
 }
-footer a{
+footer a {
   color: white;
   text-decoration: none;
 }
-footer ul li{
-  margin: .3em .8rem;
-  opacity: .5;
+footer ul li {
+  margin: 0.3em 0.8rem;
+  opacity: 0.5;
   list-style: none;
 }
-footer ul li:hover{
-  opacity: .8;
+footer ul li:hover {
+  opacity: 0.8;
 }
-footer p em{
-  opacity: .5;
+
+footer p {
+  margin-top: 5rem;
   color: white;
-  font-weight: 700;
-  font-size: .8rem;
-  text-align: center;
-  margin-top: -1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  text-align: right;
 }
 
 @media (max-width: 700px) {
@@ -272,6 +303,10 @@ footer p em{
   }
   header .menu li {
     margin-bottom: 1rem;
+  }
+  header .menu li label {
+    width: 2rem;
+    height: 2rem;
   }
   header .icon-menu {
     display: block;
@@ -302,7 +337,7 @@ footer p em{
     border-radius: 0 15px 15px 0;
   }
   main .box-project .boxs .box:nth-child(even) {
-    border-radius:15px 0 0 15px;
+    border-radius: 15px 0 0 15px;
     float: right;
   }
   main .box-project .boxs .box img {
@@ -325,5 +360,24 @@ footer p em{
   }
   main #contact form {
     width: 90%;
+  }
+  main #contact .data-kontak {
+    width: 100%;
+  }
+}
+
+.kedip {
+  animation: kedip 0.5s linear infinite;
+  font-weight: 900;
+  color: black;
+}
+
+@keyframes kedip {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
