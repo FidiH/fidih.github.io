@@ -1,186 +1,175 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- start seo -->
-    <meta name="google-site-verification" content="AM47ruBftRpWjwAc_qkg4SAuGJWhLuCXg9zq1nXtAe8" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Portofolio Fidi, pelajar SMK jurusan Teknik Jaringan Komputer, serta suka coba coba Web Development, sedang belajar HTML, CSS, dan JavaScript."
-    />
-    <meta
-      name="keywords"
-      content="Fidi, SMK, teknik jaringan, web development, HTML, CSS, JavaScript, portofolio SMK"
-    />
-    <meta name="author" content="Fidi" />
-    <meta property="og:title" content="Fidi | Pelajar SMK & Web Dev Pemula" />
-    <meta
-      property="og:description"
-      content="Portofolio Fidi, pelajar SMK jurusan teknik jaringan & suka main web development."
-    />
-    <meta property="og:url" content="https://fidih.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://fidih.github.io/assets/pp.webp"
-    />
+    <!-- main load -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/script.js" as="script" />
+    <link rel="preload" href="assets/gede.jpg" as="image" />
 
-    <!-- Untuk Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Fidi | Pelajar SMK & Web Dev Pemula" />
-    <meta
-      name="twitter:description"
-      content="Portofolio Fidi, pelajar SMK jurusan teknik jaringan & suka main web development."
-    />
-    <meta
-      name="twitter:image"
-      content="https://fidih.github.io/assets/pp.webp"
-    />
-    <!-- end seo -->
+    <title>fidi a junior web developer</title>
 
-    <title>Fidi | Pelajar SMK & Web Dev Pemula</title>
-    <!-- start aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- end aos -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- start header -->
+    <!-- header -->
     <header>
-      <a href="#" id="logo">fidfulcin</a>
-
-      <ul class="menu">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#project">Karya</a></li>
-        <li><a href="#contact">Kontak</a></li>
-        <li>
-          <label for="colorAksen"></label>
-          <input hidden id="colorAksen" type="color" value="#c93535" />
-        </li>
-      </ul>
-
-      <div class="icon-menu">
-        <img id="btn-menu" src="./assets/menu.png" alt="" />
-      </div>
+      <h2 id="judulHeader">fidihartato</h2>
+      <!-- tombol buka navigasi -->
+      <button type="button" class="btnMenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
     </header>
-    <!-- end header -->
+    <!-- akhir header -->
 
-    <!-- start main -->
+    <!-- aside -->
+    <aside>
+      <div class="wrapper-header">
+        <h3>navigasi</h3>
+        <!-- tombol tutup navigasi -->
+        <button type="button" class="btnTutup">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav>
+        <a href="#">home</a>
+        <a href="#about">about</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </aside>
+    <!-- akhir aside -->
+
+    <!-- main -->
     <main>
-      <!-- start hero -->
-      <section class="hero">
-        <div class="info">
-          <h1 id="judul">
-            Hai, <span id="ketik"></span><span class="kedip">_</span>
+      <div class="box" id="box1">
+        <!-- teks utama -->
+        <section>
+          <h1>
+            hi everyone <br />
+            iam fidi hartato
           </h1>
-          <h3>Saya seorang <span>Pelajar</span></h3>
           <p>
-            Masih duduk di bangku SMK, tapi rasa penasaran saya udah melesat ke
-            mana-mana 👨‍🍳.
+            Lorem ipsum dolor sit amet. ipsum dolor sit amet. ipsum dolor sit
+            amet, consectetur adipisicing elit. Nam, incidunt.
+            <a href="#about">About</a>
           </p>
-          <div class="box-links"></div>
-          <a href="#contact"><button class="btn-klik">Kontak</button></a>
+        </section>
+        <!-- gambar utama -->
+        <div class="wrapper-img">
+          <piture>
+            <img
+              id="profil"
+              src="./assets/gede.jpg"
+              alt="foto profil"
+              width="100"
+            />
+          </piture>
+          <nav>
+            <a href="#detail">detail</a>
+            <a href="#galeri">see more</a>
+          </nav>
         </div>
-        <div class="box-img">
-          <img src="./assets/pp.webp" alt="profile" />
-        </div>
-      </section>
-      <!-- end hero -->
 
-      <!-- start about -->
-      <section id="about">
-        <h2 data-aos="flip-up">Tentang Saya</h2>
-        <div class="informasi">
-          <div class="tentang">
-            <h4 data-aos="flip-up">Hai…👋</h4>
-            <p data-aos="flip-up">
-              Saya Fidi, pelajar SMK jurusan Teknik Jaringan Komputer &
-              Telekomunikasi. Selain jaringan, saya juga suka coba-coba main web
-              pakai HTML, CSS, dan JavaScript. Prinsip saya: berani coba, siap
-              error, dan 😂🤣(u know).
-            </p>
-            <br />
-            <p data-aos="flip-up">
-              Meskipun saya belum punya banyak pengalaman atau proyek besar,
-              saya percaya bahwa kemauan untuk terus belajar adalah fondasi
-              terpenting.
-            </p>
-          </div>
-          <div class="pendidikanDanSkill" data-aos="flip-up">
-            <ul>
-              <li>SMK LPPM RI 2 Kedungreja - (sekarang)</li>
-              <li>MTs Ell-Firdaus 2 Kedungreja - (2024)</li>
-              <li>MI Al-Ma'arif 2 Tambaksari - (2021)</li>
-            </ul>
-          </div>
+        <!-- link see project -->
+        <div id="seeProject">
+          <a href="/seeProject">see my project</a>
         </div>
-      </section>
-      <!-- end about -->
 
-      <!-- start project -->
-      <div id="project" class="box-project">
-        <h2 data-aos="flip-up">Karya Sederhana</h2>
-        <div class="boxs">
-          <div class="box" data-aos="flip-up" data-aos-delay="100">
-            <h4><a href="">Pesan Anonim</a></h4>
-            <img src="assets/pp.webp" alt="" />
-          </div>
-          <div class="box" data-aos="flip-up" data-aos-delay="500">
-            <h4><a href="">Pesan Anonim</a></h4>
-            <img src="assets/pp.webp" alt="" />
-          </div>
+        <!-- info lainnya -->
+        <div class="links">
+          <a href="">github</a>
+          <a href="">instagram</a>
+          <a href="">whatsapp</a>
         </div>
       </div>
-      <!-- end project -->
 
-      <!-- start kontak -->
-      <section id="contact">
-        <h2 data-aos="flip-up">Kontak</h2>
-        <div class="data-kontak">
-          <ul>
-            <li data-aos="flip-up">whatsapp : (62) 8311 6293 051</li>
-            <li data-aos="flip-up">tempat : Cilacap Barat. Indonesia</li>
+      <div class="box" id="box2">
+        <section id="about">
+          <h2>about me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+            officia, tenetur illo nihil, odit, cumque ex consequuntur, vero quam
+            doloribus velit veniam impedit illum nemo earum soluta omnis quaerat
+            eligendi!
+          </p>
+          <ul class="riwayatPendidikan">
+            <h3>history</h3>
+            <li>
+              <p>SMK LPPMRI 2 KEDUNGREJA (2024 - NOW)</p>
+            </li>
           </ul>
-        </div>
-        <form action="">
-          <input data-aos="flip-up" type="email" placeholder="Email" />
-          <textarea data-aos="flip-up" placeholder="messeage"></textarea>
-          <button data-aos="flip-up" type="submit">Kirim</button>
-        </form>
-        <em style="opacity: 0.5">*form belum berfungsi</em>
-      </section>
-      <!-- end kontak -->
+        </section>
+      </div>
+<!-- box 3 -->
+      <div class="box" id="box3">
+        <section id="gallery">
+          <h2>gallery</h2>
+          <div class="wrapper-gallery">
+          <figure>
+            <img width="40" loading="lazy" src="./assets/gede.jpg" alt="benner">
+            <figcaption>
+              <a href="/">to do list simple</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img width="40" loading="lazy" src="./assets/gede.jpg" alt="benner">
+            <figcaption>
+              <a href="/">pesan anonim</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img width="40" loading="lazy" src="./assets/gede.jpg" alt="benner">
+            <figcaption>
+              <a href="/">website</a>
+            </figcaption>
+          </figure>
+          </div>
+        </section>
+      </div>
+      <!-- box4 -->
+      <div id="box4">
+        <section class="box" id="contact">
+          <h2>contact</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore quod obcaecati quas perspiciatis eligendi amet rem harum doloremque minima aliquam atque id esse, explicabo, nemo inventore? Ipsa beatae, consectetur.</p>
+          <ul>
+            <li>
+              <p>email <a href="mailto:fidihartato.pidi@gmail.com">fidihartato.pidi@gmail.com</a></p>
+            </li>
+            <li>
+              <p>whatsapp <a href="https://wa.me/6283116293051">(62)83116293051</a></p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
-    <!-- end main -->
+    <!-- akhir main -->
 
-    <!-- start footer -->
-    <footer>
-      <h2 data-aos="flip-up"><a href="">fidfulcin</a></h2>
-      <ul data-aos="flip-up">
-        <li><a href="#" class="aktif">Beranda</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#project">Karya</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-      <p>
-        <em>Fidi - 2025</em>
-      </p>
-    </footer>
-    <!-- end footer -->
-
-    <!-- start aos -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- end aos -->
-
-    <!-- js mandiri -->
-    <script src="./js/script.js"></script>
+    <script type="module" src="js/script.mjs"></script>
   </body>
 </html>
